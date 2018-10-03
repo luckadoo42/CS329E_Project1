@@ -9,20 +9,32 @@
 import UIKit
 
 class Animal {
-        var image : String
+    var image : String
+    var name : String
+    var sciName : String
+    var animClass : String
+    var size : String
     
-    init(image:String) {
+    init(image:String, name:String, sciName:String, animClass:String, size:String) {
         self.image=image
+        self.name=name
+        self.sciName=sciName
+        self.animClass=animClass
+        self.size=size
     }
 }
 
 class AnimalTableViewCell: UITableViewCell {
     @IBOutlet weak var animalImage: UIImageView!
+    @IBOutlet weak var animalName: UILabel!
+    @IBOutlet weak var animalSciName: UILabel!
+    @IBOutlet weak var animalClass: UILabel!
+    @IBOutlet weak var animalWeight: UILabel!
 }
 
 class AnimalTableViewController: UITableViewController {
     
-    var Animals = [ Animal(image:"ahaha") ]
+    var Animals = [ Animal(image:"ahaha",name:"Aha Ha",sciName:"Aha Ha",animClass:"Insecta",size:"0.1 g"), Animal(image:"Animal",name:"Animal",sciName:"Muppettis Drummercus",animClass:"Muppet",size:"15 kg"), Animal(image:"saiga",name:"Saiga Antellope",sciName:"Saiga Tatarica",animClass:"Mammalia",size:"26-29 kg") ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,17 +60,19 @@ class AnimalTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalCell", for: indexPath) as! AnimalTableViewCell
         
         let animal = Animals[indexPath.row]
         cell.animalImage?.image = UIImage(named: animal.image)
-
+        cell.animalName?.text = animal.name
+        cell.animalSciName?.text = animal.sciName
+        cell.animalClass?.text = animal.animClass
+        cell.animalWeight?.text = animal.size
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(150)
+        return CGFloat(200)
     }
 
     /*
