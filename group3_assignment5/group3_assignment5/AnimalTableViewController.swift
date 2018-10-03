@@ -9,10 +9,18 @@
 import UIKit
 
 class Animal {
-        var image : String
+    var image : String
+    var name : String
+    var sciName : String
+    var animClass : String
+    var size : String
     
-    init(image:String) {
+    init(image:String, name:String, sciName:String, animClass:String, size:String) {
         self.image=image
+        self.name=name
+        self.sciName=sciName
+        self.animClass=animClass
+        self.size=size
     }
 }
 
@@ -22,7 +30,7 @@ class AnimalTableViewCell: UITableViewCell {
 
 class AnimalTableViewController: UITableViewController {
     
-    var Animals = [ Animal(image:"ahaha") ]
+    var Animals = [ Animal(image:"ahaha",name:"Aha Ha",sciName:"Aha Ha",animClass:"Insecta",size:"Size") ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
