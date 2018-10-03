@@ -1,5 +1,5 @@
 //
-//  Animals.swift
+//  AnimalTableViewController.swift
 //  group3_assignment5
 //
 //  Created by Denver Ray Luckadoo III on 10/2/18.
@@ -8,11 +8,21 @@
 
 import UIKit
 
+class Animal {
+        var image : String
+    
+    init(image:String) {
+        self.image=image
+    }
+}
+
 class AnimalTableViewCell: UITableViewCell {
     @IBOutlet weak var animalImage: UIImageView!
 }
 
-class Animals: UITableViewController {
+class AnimalTableViewController: UITableViewController {
+    
+    var Animals = [ Animal(image:"ahaha") ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,21 +36,23 @@ class Animals: UITableViewController {
 
     // MARK: - Table view data source
 
+    /*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
+    */
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return Animals.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalCell", for: indexPath) as! AnimalTableViewCell
-
-        cell.animalImage?.image = UIImage(named: Animals.image)
+        
+        let animal = Animals[indexPath.row]
+        cell.animalImage?.image = UIImage(named: animal.image)
 
         return cell
     }
