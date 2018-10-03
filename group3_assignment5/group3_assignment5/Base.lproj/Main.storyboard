@@ -11,7 +11,7 @@
         <!--Root View Controller-->
         <scene sceneID="Myd-8n-ePS">
             <objects>
-                <tableViewController id="WCC-Zc-zJP" customClass="Animals" customModule="group3_assignment5" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="WCC-Zc-zJP" customClass="AnimalTableViewController" customModule="group3_assignment5" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HOY-Je-zEn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnimalCell" rowHeight="184" id="g2U-oz-g5b" customClass="AnimalTableViewCell" customModule="group3_assignment5" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="184"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g2U-oz-g5b" id="YAz-Xp-1kE">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g2U-oz-g5b" id="YAz-Xp-1kE" customClass="AnimalTableViewCell" customModule="group3_assignment5" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="183.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
