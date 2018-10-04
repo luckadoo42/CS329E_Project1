@@ -8,21 +8,7 @@
 
 import UIKit
 
-class Animal {
-    var image : String
-    var name : String
-    var sciName : String
-    var animClass : String
-    var size : String
-    
-    init(image:String, name:String, sciName:String, animClass:String, size:String) {
-        self.image=image
-        self.name=name
-        self.sciName=sciName
-        self.animClass=animClass
-        self.size=size
-    }
-}
+
 
 class AnimalTableViewCell: UITableViewCell {
     @IBOutlet weak var animalImage: UIImageView!
@@ -56,23 +42,36 @@ class AnimalTableViewController: UITableViewController {
     */
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return Animals.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalCell", for: indexPath) as! AnimalTableViewCell
         
-        let animal = Animals[indexPath.row]
-        cell.animalImage?.image = UIImage(named: animal.image)
-        cell.animalName?.text = animal.name
-        cell.animalSciName?.text = animal.sciName
-        cell.animalClass?.text = animal.animClass
-        cell.animalWeight?.text = animal.size
-        return cell
+        
+        
+        let animal = Animals[indexPath.section]
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalCell", for: indexPath) as! AnimalTableViewCell
+            cell.animalImage?.image = UIImage(named: animal.image)
+            cell.animalName?.text = animal.name
+            return cell
+
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DescriptionCell", for: indexPath) as! AnimalTableViewCell
+            cell.animalSciName?.text = animal.sciName
+            cell.animalClass?.text = animal.animClass
+            cell.animalWeight?.text = animal.size
+            return cell
+
+        }
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(200)
+        return CGFloat(100)
     }
 
     /*
