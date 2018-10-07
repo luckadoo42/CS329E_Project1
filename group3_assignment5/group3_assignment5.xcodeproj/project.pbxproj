@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0798B9512166791200A5ED82 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0798B9502166791200A5ED82 /* Animal.swift */; };
+		2D0FEA66216AAFB7008BF1BC /* animalPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D0FEA65216AAFB7008BF1BC /* animalPList.plist */; };
+		2D0FEA68216AB256008BF1BC /* AnimalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FEA67216AB256008BF1BC /* AnimalCollectionViewController.swift */; };
 		2DA1ECFB21644331000F1752 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA1ECFA21644331000F1752 /* AppDelegate.swift */; };
 		2DA1ED0021644331000F1752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA1ECFE21644331000F1752 /* Main.storyboard */; };
 		2DA1ED0221644331000F1752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA1ED0121644331000F1752 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		0798B9502166791200A5ED82 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		2D0FEA65216AAFB7008BF1BC /* animalPList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = animalPList.plist; sourceTree = "<group>"; };
+		2D0FEA67216AB256008BF1BC /* AnimalCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCollectionViewController.swift; sourceTree = "<group>"; };
 		2DA1ECF721644331000F1752 /* group3_assignment5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = group3_assignment5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA1ECFA21644331000F1752 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DA1ECFF21644331000F1752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,9 +60,11 @@
 		2DA1ECF921644331000F1752 /* group3_assignment5 */ = {
 			isa = PBXGroup;
 			children = (
+				2D0FEA65216AAFB7008BF1BC /* animalPList.plist */,
 				2DA1ECFA21644331000F1752 /* AppDelegate.swift */,
 				2DA1ECFE21644331000F1752 /* Main.storyboard */,
 				2DA1ED102164468F000F1752 /* AnimalTableViewController.swift */,
+				2D0FEA67216AB256008BF1BC /* AnimalCollectionViewController.swift */,
 				0798B9502166791200A5ED82 /* Animal.swift */,
 				2DA1ED0121644331000F1752 /* Assets.xcassets */,
 				2DA1ED0321644331000F1752 /* LaunchScreen.storyboard */,
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DA1ED0521644331000F1752 /* LaunchScreen.storyboard in Resources */,
+				2D0FEA66216AAFB7008BF1BC /* animalPList.plist in Resources */,
 				2DA1ED0221644331000F1752 /* Assets.xcassets in Resources */,
 				2DA1ED0021644331000F1752 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0FEA68216AB256008BF1BC /* AnimalCollectionViewController.swift in Sources */,
 				2DA1ED112164468F000F1752 /* AnimalTableViewController.swift in Sources */,
 				0798B9512166791200A5ED82 /* Animal.swift in Sources */,
 				2DA1ECFB21644331000F1752 /* AppDelegate.swift in Sources */,
