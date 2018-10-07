@@ -61,12 +61,12 @@
 			isa = PBXGroup;
 			children = (
 				2D0FEA65216AAFB7008BF1BC /* animalPList.plist */,
+				2DA1ED0121644331000F1752 /* Assets.xcassets */,
 				2DA1ECFA21644331000F1752 /* AppDelegate.swift */,
 				2DA1ECFE21644331000F1752 /* Main.storyboard */,
 				2DA1ED102164468F000F1752 /* AnimalTableViewController.swift */,
 				2D0FEA67216AB256008BF1BC /* AnimalCollectionViewController.swift */,
 				0798B9502166791200A5ED82 /* Animal.swift */,
-				2DA1ED0121644331000F1752 /* Assets.xcassets */,
 				2DA1ED0321644331000F1752 /* LaunchScreen.storyboard */,
 				2DA1ED0621644332000F1752 /* Info.plist */,
 			);

@@ -2,14 +2,49 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Wombat</key>
+	<dict>
+		<key>wombat</key>
+		<string>It&apos;s Australia&apos;s most adorable mammal! (Not you, kangaroos).</string>
+		<key>wombat_two</key>
+		<string>These wombats are rolling around in the grass!</string>
+		<key>wombat_shoe</key>
+		<string>Shoes and feet are the prey of wombats.</string>
+		<key>wombat_grass</key>
+		<string>Wombats love grass.</string>
+	</dict>
+	<key>Saiga</key>
+	<dict>
+		<key>saiga_lying_down</key>
+		<string>Is that a dead saiga??? No, just sleepy.</string>
+		<key>saiga_sitting</key>
+		<string>This saiga is soakig up some rays in the morning sun.</string>
+		<key>Saiga</key>
+		<string>This Saiga likes frolicking in the meadow.</string>
+		<key>saiga_small</key>
+		<string>A couple of teensy tiny saigas!</string>
+	</dict>
+	<key>Animal</key>
+	<dict>
+		<key>animal_car</key>
+		<string>Animal in a car!</string>
+		<key>animal_glasses</key>
+		<string>Animal wears glasses sometimes.</string>
+		<key>animal_triangle</key>
+		<string>Animal is an accomplished percussionist.</string>
+		<key>Animal</key>
+		<string>Animal knows how to have a gooood time!</string>
+	</dict>
 	<key>Aha Ha</key>
 	<dict>
 		<key>ahaha_drinking</key>
-		<string>This is a picture of an Aha Ha drinking.</string>
+		<string>Aha Ha drinking some water.</string>
 		<key>ahaha_net</key>
-		<string>This is a picture of an Aha Ha net.</string>
+		<string>An Aha Ha net.</string>
 		<key>ahaha_wasp</key>
-		<string>This is a picture of an Aha Ha wasp being all waspy and whatnot.</string>
+		<string>Aha Ha wasp being all waspy and whatnot.</string>
+		<key>ahaha</key>
+		<string>A handsome Aha Ha wasp.</string>
 	</dict>
 </dict>
 </plist>
