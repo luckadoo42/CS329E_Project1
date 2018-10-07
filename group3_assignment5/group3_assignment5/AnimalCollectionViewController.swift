@@ -12,9 +12,7 @@ private let reuseIdentifier = "Cell"
 
 class AnimalCollectionViewCell: UICollectionViewCell{
     @IBOutlet weak var showAnimalImage: UIImageView!
-    @IBOutlet weak var showAnimalImageName: UILabel!
     @IBOutlet weak var showAnimalImageCaption: UILabel!
-    
 }
 
 class AnimalCollectionViewController: UICollectionViewController {
@@ -45,19 +43,22 @@ class AnimalCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! AnimalCollectionViewCell
+        
+        
         // Configure the cell
+        
+        
     
         return cell
     }

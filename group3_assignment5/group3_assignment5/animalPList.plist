@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array>
+<dict>
+	<key>Aha Ha</key>
 	<dict>
-		<key>wombat</key>
-		<string>This is a wombat</string>
+		<key>ahaha_drinking</key>
+		<string>This is a picture of an Aha Ha drinking.</string>
+		<key>ahaha_net</key>
+		<string>This is a picture of an Aha Ha net.</string>
+		<key>ahaha_wasp</key>
+		<string>This is a picture of an Aha Ha wasp being all waspy and whatnot.</string>
 	</dict>
-</array>
+</dict>
 </plist>
