@@ -14,8 +14,6 @@ class AnimalViewController: UIViewController, UICollectionViewDataSource, UIColl
     var animalIndex = -1
     private let reuseIdentifier = "animalCollectionCell"
     private var galleryDict : NSDictionary? = [:]
-    private let headerText = ["something about the Aha Ha", "animal header", "sagiasdjfa;", "womboboat"]
-    private let footerText = ["aha Ha feet", "animal foot", "atenlopet footer;", "tabmow"]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return galleryDict!.count + 2
@@ -28,12 +26,12 @@ class AnimalViewController: UIViewController, UICollectionViewDataSource, UIColl
         let footerCell = collectionView.dequeueReusableCell(withReuseIdentifier: "footerCell", for: indexPath) as! FooterCollectionViewCell
         
         if indexPath.row == 0 {
-            headerCell.headerLabel.text = headerText[animalIndex]
+            headerCell.headerLabel.text = Animal.animals[animalIndex].headerText
             return headerCell
         }
         
         if indexPath.row == galleryDict!.count + 1 {
-            footerCell.footerLabel.text = headerText[animalIndex]
+            footerCell.footerLabel.text = Animal.animals[animalIndex].footerText
             return footerCell
         }
         
@@ -56,7 +54,6 @@ class AnimalViewController: UIViewController, UICollectionViewDataSource, UIColl
         return CGSize(width: 375, height: 246)
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         print(animalIndex)
