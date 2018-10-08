@@ -42,5 +42,15 @@
 		<key>wombat_grass</key>
 		<string>Wombats love grass.</string>
 	</dict>
+	<dict>
+		<key>pacu</key>
+		<string>Pacu fish live in water most of the time.</string>
+		<key>pacu1</key>
+		<string>Pacu fish have weird teeth!</string>
+		<key>pacu2</key>
+		<string>Pacu fish can get pretty big.</string>
+		<key>pacu3</key>
+		<string>This Pacu fish is in an aquarium.</string>
+	</dict>
 </array>
 </plist>
